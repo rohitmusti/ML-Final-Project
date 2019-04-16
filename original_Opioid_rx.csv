@@ -1,0 +1,135 @@
+﻿County,State,FIPS County Code,2016 Prescribing Rate
+"Accomack, VA",VA,51001,60.7
+"Albemarle, VA",VA,51003,59.1
+"Alleghany, VA",VA,51005,86.8
+"Amelia, VA",VA,51007,48.1
+"Amherst, VA",VA,51009,75
+"Appomattox, VA",VA,51011,125
+"Arlington, VA",VA,51013,24.4
+"Augusta, VA",VA,51015,19.7
+"Bath, VA",VA,51017,1.4
+"Bedford, VA",VA,51019,44.9
+"Bland, VA",VA,51021,66.8
+"Botetourt, VA",VA,51023,39.6
+"Brunswick, VA",VA,51025,23.9
+"Buchanan, VA",VA,51027,131
+"Buckingham, VA",VA,51029,2.1
+"Campbell, VA",VA,51031,43
+"Caroline, VA",VA,51033,35.3
+"Carroll, VA",VA,51035,44.9
+"Charles City, VA",VA,51036,–
+"Charlotte, VA",VA,51037,38.9
+"Chesterfield, VA",VA,51041,67.8
+"Clarke, VA",VA,51043,28.5
+"Craig, VA",VA,51045,5.2
+"Culpeper, VA",VA,51047,65.5
+"Cumberland, VA",VA,51049,29.3
+"Dickenson, VA",VA,51051,185.1
+"Dinwiddie, VA",VA,51053,5.1
+"Essex, VA",VA,51057,109.5
+"Fairfax, VA",VA,51059,29.7
+"Fauquier, VA",VA,51061,72.2
+"Floyd, VA",VA,51063,50
+"Fluvanna, VA",VA,51065,31.4
+"Franklin, VA",VA,51067,80.1
+"Frederick, VA",VA,51069,58.2
+"Giles, VA",VA,51071,119.8
+"Gloucester, VA",VA,51073,107.5
+"Goochland, VA",VA,51075,14.8
+"Grayson, VA",VA,51077,25
+"Greene, VA",VA,51079,77.8
+"Greensville, VA",VA,51081,–
+"Halifax, VA",VA,51083,81.3
+"Hanover, VA",VA,51085,90.2
+"Henrico, VA",VA,51087,68.2
+"Henry, VA",VA,51089,73.4
+"Highland, VA",VA,51091,–
+"Isle of Wight, VA",VA,51093,74.1
+"James City, VA",VA,51095,96.2
+"King and Queen, VA",VA,51097,–
+"King George, VA",VA,51099,54.6
+"King William, VA",VA,51101,40.3
+"Lancaster, VA",VA,51103,156.9
+"Lee, VA",VA,51105,149.5
+"Loudoun, VA",VA,51107,36.8
+"Louisa, VA",VA,51109,49.8
+"Lunenburg, VA",VA,51111,1.6
+"Madison, VA",VA,51113,–
+"Mathews, VA",VA,51115,55.2
+"Mecklenburg, VA",VA,51117,105.7
+"Middlesex, VA",VA,51119,3.1
+"Montgomery, VA",VA,51121,61.6
+"Nelson, VA",VA,51125,21.9
+"New Kent, VA",VA,51127,58.7
+"Northampton, VA",VA,51131,113.8
+"Northumberland, VA",VA,51133,30.7
+"Nottoway, VA",VA,51135,77.3
+"Orange, VA",VA,51137,91
+"Page, VA",VA,51139,86
+"Patrick, VA",VA,51141,69.2
+"Pittsylvania, VA",VA,51143,22.3
+"Powhatan, VA",VA,51145,45.8
+"Prince Edward, VA",VA,51147,99.5
+"Prince George, VA",VA,51149,–
+"Prince William, VA",VA,51153,38.5
+"Pulaski, VA",VA,51155,134.1
+"Rappahannock, VA",VA,51157,–
+"Richmond, VA",VA,51159,44
+"Roanoke, VA",VA,51161,84.4
+"Rockbridge, VA",VA,51163,–
+"Rockingham, VA",VA,51165,30.3
+"Russell, VA",VA,51167,111.7
+"Scott, VA",VA,51169,153.7
+"Shenandoah, VA",VA,51171,69
+"Smyth, VA",VA,51173,131.3
+"Southampton, VA",VA,51175,0
+"Spotsylvania, VA",VA,51177,66.4
+"Stafford, VA",VA,51179,49.1
+"Surry, VA",VA,51181,–
+"Sussex, VA",VA,51183,22
+"Tazewell, VA",VA,51185,179.3
+"Warren, VA",VA,51187,87.6
+"Washington, VA",VA,51191,105
+"Westmoreland, VA",VA,51193,43
+"Wise, VA",VA,51195,194.5
+"Wythe, VA",VA,51197,109.5
+"York, VA",VA,51199,47
+"Alexandria, VA",VA,51510,33
+"Bedford City, VA",VA,51515,–
+"Bristol, VA",VA,51520,174.2
+"Buena Vista, VA",VA,51530,85.2
+"Charlottesville, VA",VA,51540,52.8
+"Chesapeake, VA",VA,51550,65.5
+"Colonial Heights, VA",VA,51570,222.2
+"Covington, VA",VA,51580,235.3
+"Danville, VA",VA,51590,179.2
+"Emporia, VA",VA,51595,283.1
+"Fairfax City, VA",VA,51600,78.8
+"Falls Church, VA",VA,51610,57.1
+"Franklin City, VA",VA,51620,268.2
+"Fredericksburg, VA",VA,51630,166.3
+"Galax, VA",VA,51640,394.4
+"Hampton, VA",VA,51650,76.8
+"Harrisonburg, VA",VA,51660,124.7
+"Hopewell, VA",VA,51670,151.7
+"Lexington, VA",VA,51678,237
+"Lynchburg, VA",VA,51680,116.7
+"Manassas, VA",VA,51683,109.7
+"Manassas Park, VA",VA,51685,–
+"Martinsville, VA",VA,51690,399.9
+"Newport News, VA",VA,51700,62.8
+"Norfolk, VA",VA,51710,64.8
+"Norton, VA",VA,51720,470.3
+"Petersburg, VA",VA,51730,152.2
+"Poquoson, VA",VA,51735,80.6
+"Portsmouth, VA",VA,51740,102.4
+"Radford, VA",VA,51750,97.8
+"Richmond City, VA",VA,51760,53.2
+"Roanoke City, VA",VA,51770,102.1
+"Salem, VA",VA,51775,206
+"Staunton, VA",VA,51790,175
+"Suffolk, VA",VA,51800,85.4
+"Virginia Beach, VA",VA,51810,61
+"Waynesboro, VA",VA,51820,202.9
+"Williamsburg, VA",VA,51830,–
+"Winchester, VA",VA,51840,175
