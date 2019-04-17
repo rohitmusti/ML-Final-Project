@@ -58,10 +58,10 @@ temp_med_income_df <- data.frame(cbind(data.frame(temp_med_income_df_1@geography
   return(rbind(med_income_df, temp_med_income_df))
 }
 
-for (i in states) {
-  med_income_df <- mi_creator(paste0(i), "B19013")
-  print(i) 
-}
+# for (i in states) {
+#   med_income_df <- mi_creator(paste0(i), "B19013")
+#   print(i) 
+# }
 
 ########################################
 # base: percent high school grad
@@ -89,10 +89,10 @@ grad_creator <- function(state_p) {
   return(rbind(perc_grad_df, temp_home_lang_df))
 }
 
-for (i in states) {
-  perc_grad_df <- grad_creator(paste0(i))
-  print(i) 
-}
+# for (i in states) {
+#   perc_grad_df <- grad_creator(paste0(i))
+#   print(i) 
+# }
 
 
 ########################################
@@ -121,10 +121,10 @@ health_coverage_creator <- function(state_p) {
   return(rbind(health_coverage_df, temp_health_coverage_df))
 }
 
-for (i in states) {
-  health_coverage_df <- health_coverage_creator(paste0(i))
-  print(i) 
-}
+# for (i in states) {
+#   health_coverage_df <- health_coverage_creator(paste0(i))
+#   print(i) 
+# }
 
 ########################################
 # base: total population
@@ -153,10 +153,10 @@ total_pop_creator <- function(state_p) {
 
 }
 
-for (i in states) {
-  total_population_df <- total_pop_creator(paste0(i))
-  print(i) 
-}
+# for (i in states) {
+#   total_population_df <- total_pop_creator(paste0(i))
+#   print(i) 
+# }
 
 ########################################
 # base: average household size
@@ -183,10 +183,10 @@ avg_household_size_creator <- function(state_p) {
   return(rbind(avg_household_size_df, temp_average_household_size_df))
 }
 
-for (i in states) {
-  avg_household_size_df <- avg_household_size_creator(paste0(i))
-  print(i) 
-}
+# for (i in states) {
+#   avg_household_size_df <- avg_household_size_creator(paste0(i))
+#   print(i) 
+# }
 
 ########################################
 # base: percent foreign born
@@ -213,10 +213,10 @@ perc_foreign_born_creator <- function(state_p) {
   return(rbind(perc_foreign_born_df, temp_perc_foreign_born_df))
 }
 
-for (i in states) {
-  perc_foreign_born_df <- perc_foreign_born_creator(paste0(i))
-  print(i) 
-}
+#for (i in states) {
+#  perc_foreign_born_df <- perc_foreign_born_creator(paste0(i))
+#  print(i) 
+#}
 
 
 ########################################
@@ -245,10 +245,10 @@ perc_male_creator <- function(state_p) {
   return(rbind(perc_male_df, temp_perc_male_df_1))
 }
 
-for (i in states_mnm) {
-  perc_male_df <- perc_male_creator(paste0(i))
-  print(i) 
-}
+#for (i in states_mnm) {
+#  perc_male_df <- perc_male_creator(paste0(i))
+#  print(i) 
+#}
 
 ########################################
 # base: median age
@@ -275,10 +275,10 @@ median_age_creator <- function(state_p) {
   return(rbind(median_age_df, temp_median_age_df))
 }
 
-for (i in states_mnm) {
-  median_age_df <- perc_male_creator(paste0(i))
-  print(i) 
-}
+# for (i in states_mnm) {
+#   median_age_df <- perc_male_creator(paste0(i))
+#   print(i) 
+# }
 
 ########################################
 # base: poverty level
@@ -306,18 +306,26 @@ poverty_df_creator <- function(state_p) {
 }
 
 for (i in states) {
+  med_income_df <- mi_creator(paste0(i), "B19013")
+  perc_grad_df <- grad_creator(paste0(i))
+  health_coverage_df <- health_coverage_creator(paste0(i))
+  total_population_df <- total_pop_creator(paste0(i))
+  avg_household_size_df <- avg_household_size_creator(paste0(i))
+  perc_foreign_born_df <- perc_foreign_born_creator(paste0(i))
+  perc_male_df <- perc_male_creator(paste0(i))
+  median_age_df <- perc_male_creator(paste0(i))
   poverty_df <- poverty_df_creator(paste0(i))
   print(i) 
 }
 
-final_data <- inner_join(med_income_df, perc_grad_df, by="fips")
-final_data <- inner_join(final_data, health_coverage, by="fips")
-final_data <- inner_join(final_data, total_population_df, by="fips")
-final_data <- inner_join(final_data, avg_household_size_df, by="fips")
-final_data <- inner_join(final_data, perc_foreign_born_df, by="fips")
-final_data <- inner_join(final_data, perc_male_df, by="fips")
-final_data <- inner_join(final_data, median_age_df, by="fips")
-final_data <- inner_join(final_data, poverty_df, by="fips")
+#final_data <- inner_join(med_income_df, perc_grad_df, by="fips")
+#final_data <- inner_join(final_data, health_coverage, by="fips")
+#final_data <- inner_join(final_data, total_population_df, by="fips")
+#final_data <- inner_join(final_data, avg_household_size_df, by="fips")
+#final_data <- inner_join(final_data, perc_foreign_born_df, by="fips")
+#final_data <- inner_join(final_data, perc_male_df, by="fips")
+#final_data <- inner_join(final_data, median_age_df, by="fips")
+#final_data <- inner_join(final_data, poverty_df, by="fips")
 
 
 
