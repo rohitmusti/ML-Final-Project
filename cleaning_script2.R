@@ -329,4 +329,10 @@ final_data <- inner_join(final_data, poverty_df, by="fips")
 
 write_csv(final_data, "final_data.csv")
 
+library(tidyverse)
+final_data <- read_csv("FINAL_DATA/final_data.csv")
+presc_data <- read_csv("FINAL_DATA/presc_data.csv")
 
+final_data <- inner_join(final_data, presc_data)
+
+write_csv(final_data, "final_data_2.csv")
