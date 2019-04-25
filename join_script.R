@@ -19,18 +19,20 @@ acs_final3 <- inner_join(perc_foreign_born_df, perc_grad_df)
 acs_final4 <- inner_join(perc_male_df, poverty_df)
 acs_final5 <- inner_join(presc_data, total_population_df)
 
-acs_final1.1 <- inner_join(final1, final2)
-acs_final1.2 <- inner_join(final3, final4)
+acs_final1.1 <- inner_join(acs_final1, acs_final2)
+acs_final1.2 <- inner_join(acs_final3, acs_final4)
 
-acs_final2.0 <- inner_join(final5, final1.1)
+acs_final2.0 <- inner_join(acs_final5, acs_final1.1)
 
-acs_final_done <- inner_join(final2.0, final1.2)
+acs_final_done <- inner_join(acs_final2.0, acs_final1.2)
 
 write_csv(acs_final_done, "acs_final.csv")
 
 merge_acs_presc <- inner_join(acs_final_done, presc_rates)
 
 opioid_deaths <- read_csv("NCHS_-_Drug_Poisoning_Mortality_by_County__United_States.csv")
+
+opioid_deaths$f[is.na(opioid_deaths$f)] <- 31
 
 opioid_deaths <- opioid_deaths %>%
   select(FIPS, f, Year, `Estimated Age`) %>%

@@ -126,12 +126,12 @@ health_coverage_creator <- function(state_p) {
   return(rbind(health_coverage_df, temp_health_coverage_df))
 }
 
-for (i in states) {
+for (i in states_mnm) {
  health_coverage_df <- health_coverage_creator(paste0(i))
  print(i) 
 }
 
-write_csv(perc_grad_df, "FINAL_DATA/health_coverage_df.csv")
+write_csv(health_coverage_df, "FINAL_DATA/health_coverage_df.csv")
 
 ########################################
 # base: total population
@@ -290,8 +290,8 @@ median_age_creator <- function(state_p) {
   return(rbind(median_age_df, temp_median_age_df))
 }
 
-for (i in states_mnm) {
- median_age_df <- perc_male_creator(paste0(i))
+for (i in states) {
+ median_age_df <- median_age_creator(paste0(i))
  print(i) 
 }
 
@@ -325,13 +325,13 @@ poverty_df_creator <- function(state_p) {
 for (i in states) {
 #  med_income_df <- mi_creator(paste0(i), "B19013")
 #  perc_grad_df <- grad_creator(paste0(i))
-#  health_coverage_df <- health_coverage_creator(paste0(i))
+ health_coverage_df <- health_coverage_creator(paste0(i))
 #  total_population_df <- total_pop_creator(paste0(i))
 #  avg_household_size_df <- avg_household_size_creator(paste0(i))
 #  perc_foreign_born_df <- perc_foreign_born_creator(paste0(i))
 #  perc_male_df <- perc_male_creator(paste0(i))
-#  median_age_df <- median_age_creator(paste0(i))
-  poverty_df <- poverty_df_creator(paste0(i))
+ median_age_df <- median_age_creator(paste0(i))
+  # poverty_df <- poverty_df_creator(paste0(i))
   print(i) 
 }
 
