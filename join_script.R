@@ -36,4 +36,11 @@ merge_acs_presc_death_rate <- inner_join(merge_acs_presc, opioid_deaths)
 
 merge_acs_presc_death_rate$opioid_presc_rate[merge_acs_presc_death_rate$opioid_presc_rate == "-"] <- NA
 
+merge_acs_presc_death_rate$opioid_presc_rate <- as.numeric(as.character(merge_acs_presc_death_rate$opioid_presc_rate))
+
+library(tidyr)
+
+merge_acs_presc_death_rate %>% drop_na(opioid_death_rate)
+
+
 write_csv(merge_acs_presc_death_rate,"all_data_ready_for_anal.csv")
