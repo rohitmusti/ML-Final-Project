@@ -13,8 +13,8 @@ total_population_df <- read_csv("total_population_df.csv")
 presc_rates <- read_csv("presc_data.csv")
 
 
-acs_final1 <- inner_join(avg_household_size_df, health_coverage_df)
-acs_final2 <- inner_join(med_house_income_df, median_age_df)
+acs_final1 <- distinct(inner_join(avg_household_size_df, health_coverage_df))
+acs_final2 <- inner_join(med_house_income_df, median_age_df, by="fips")
 acs_final3 <- inner_join(perc_foreign_born_df, perc_grad_df)
 acs_final4 <- inner_join(perc_male_df, poverty_df)
 acs_final5 <- inner_join(presc_data, total_population_df)
@@ -30,17 +30,7 @@ write_csv(acs_final_done, "acs_final.csv")
 
 merge_acs_presc <- inner_join(acs_final_done, presc_rates)
 
-opioid_deaths <- read_csv("NCHS_-_Drug_Poisoning_Mortality_by_County__United_States.csv")
-
-opioid_deaths$f[is.na(opioid_deaths$f)] <- 31
-
-opioid_deaths <- opioid_deaths %>%
-  select(FIPS, f, Year, `Estimated Age`) %>%
-  mutate(overdose_death_rate = `Estimated Age`, fips=FIPS) %>%
-  select(-`Estimated Age`) %>%
-  subset(Year == 2015) %>%
-  mutate(overdose_death_rate_2 = ((overdose_death_rate + f)/2)) %>%
-  select(-FIPS, -Year, -overdose_death_rate) 
+opioid_deaths <- read_csv("cdc_wonder_opioid_cleaned.csv")
 
 merge_acs_presc_death_rate <- inner_join(merge_acs_presc, opioid_deaths)
 

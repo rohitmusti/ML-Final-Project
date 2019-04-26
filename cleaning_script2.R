@@ -280,7 +280,7 @@ median_age_df <- data.frame(cbind(data.frame(median_age_df_1@geography), data.fr
 
 median_age_creator <- function(state_p) {
   temp.counties = geo.make(state=paste0(state_p),county="*")
-  temp_median_age_df_1 <- acs.fetch(geography=oh.counties, table.number="B01002", endyear='2015', span=5)
+  temp_median_age_df_1 <- acs.fetch(geography=temp.counties, table.number="B01002", endyear='2015', span=5)
   
   temp_median_age_df <- data.frame(cbind(data.frame(temp_median_age_df_1@geography), data.frame(temp_median_age_df_1@estimate))) %>%
     rowwise() %>% summarize(
